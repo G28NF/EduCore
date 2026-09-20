@@ -23,7 +23,7 @@ Cada aluno possui:
 
 ## Rotas
 
-```text id="7u2z5v"
+```text
 GET    /alunos
 GET    /alunos/{id}
 POST   /alunos
@@ -33,19 +33,64 @@ DELETE /alunos/{id}
 
 ## Estrutura do projeto
 
-```text id="y42j9k"
+```text
 studium-api/
 ├── main.py
+├── alunos.py
 ├── alunos.json
 ├── requirements.txt
+├── .gitignore
 └── README.md
 ```
+
+* `main.py`: contém a aplicação FastAPI e as rotas da API.
+* `alunos.py`: contém as operações de cadastro, consulta, atualização e exclusão dos alunos.
+* `alunos.json`: armazena os dados dos alunos.
 
 ## Tecnologias
 
 * Python
 * FastAPI
 * JSON
+
+## Instalação
+
+Clone o repositório e acesse a pasta do projeto:
+
+```bash
+git clone URL_DO_REPOSITORIO
+cd studium-api
+```
+
+Crie o ambiente virtual:
+
+```bash
+py -m venv .venv
+```
+
+No Windows PowerShell, ative o ambiente:
+
+```powershell
+.\.venv\Scripts\Activate.ps1
+```
+
+Instale as dependências:
+
+```bash
+pip install -r requirements.txt
+```
+
+## Ambiente virtual
+
+O projeto utiliza um ambiente virtual Python para manter suas dependências isoladas.
+
+A pasta `.venv` deve permanecer apenas no ambiente local e não deve ser enviada para o repositório.
+
+No arquivo `.gitignore`:
+
+```text
+.venv/
+```
 
 ## Objetivo
 
